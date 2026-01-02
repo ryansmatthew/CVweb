@@ -1,0 +1,7 @@
+services:
+  cvweb:
+    build: .
+    container_name: cvweb
+    restart: unless-stopped
+    ports:
+      - "80:8000"
