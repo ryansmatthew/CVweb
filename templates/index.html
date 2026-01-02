@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ data.name }} — CV</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+
+    <!-- LinkedIn-like Header -->
+    <header class="li-card">
+      <div class="li-cover"
+           style="background-image:url('{{ url_for('static', filename=data.images.cover) }}');">
+      </div>
+
+      <div class="li-body">
+        <div class="li-avatar-wrap">
+          <img class="li-avatar" src="{{ url_for('static', filename=data.images.avatar) }}" alt="avatar">
+        </div>
+
+        <div class="li-top">
+          <div class="li-left">
+            <h1 class="li-name">{{ data.name }}</h1>
+
+            {% if data.headline %}
+              <div class="li-headline">{{ data.headline }}</div>
+            {% endif %}
+
+            <div class="li-meta">
+              {% if data.location %}<span>{{ data.location }}</span>{% endif %}
+              <span class="dot">•</span>
+              <a href="#contact">Thông tin liên hệ</a>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact block -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        {% if data.contact.address %}<div><strong>Address:</strong> {{ data.contact.address }}</div>{% endif %}
+        {% if data.contact.phone %}<div><strong>Phone:</strong> {{ data.contact.phone }}</div>{% endif %}
+        {% if data.contact.email %}
+          <div><strong>Email:</strong> <a href="mailto:{{ data.contact.email }}">{{ data.contact.email }}</a></div>
+        {% endif %}
+      </div>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>{{ data.profile }}</p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      {% for job in data.experience %}
+      <article class="card">
+        <div class="row">
+          <h3>{{ job.role }}</h3>
+          <div class="muted">{{ job.time }}</div>
+        </div>
+        <div class="muted">{{ job.company }} — {{ job.location }}</div>
+        <ul>
+          {% for item in job.details %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endfor %}
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        {% for edu in data.education %}
+        <div class="card">
+          <h3>{{ edu.name }}</h3>
+          <div class="muted">{{ edu.detail }}</div>
+          <div class="muted">{{ edu.date }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        {% for s in data.skills %}
+        <span class="chip">{{ s }}</span>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests">
+      <h2>Interests</h2>
+      <ul>
+        {% for i in data.interests %}
+        <li>{{ i }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <footer class="footer muted">
+      © {{ data.name }} — Built with Python (Flask)
+    </footer>
+  </main>
+</body>
+</html>
