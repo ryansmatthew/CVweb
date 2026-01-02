@@ -55,6 +55,7 @@ DATA = {
         },
     ],
     "education": [
+        {"name": "Trung Cap Bach Khoa", "detail": "Trung cap CNTT", "date": "2021 - 2023"},
         {"name": "CCNA", "detail": "ID NO. CSCO14423725", "date": "July 26, 2023"},
         {"name": "FCAC", "detail": "2254673881NT", "date": "October 4, 2023"},
     ],
