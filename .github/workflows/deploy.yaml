@@ -30,4 +30,16 @@ jobs:
             docker image prune -f
             docker ps
 
-            curl -fsS http://127.0.0.1 >/dev/null && echo "Healthcheck OK"
+            # Healthcheck: retry up to 30s
+            for i in $(seq 1 30); do
+              if curl -fsS http://127.0.0.1 >/dev/null; then
+                echo "Healthcheck OK"
+                exit 0
+              fi
+              echo "Waiting for app... ($i/30)"
+              sleep 1
+            done
+
+            echo "Healthcheck FAILED"
+            docker logs --tail=200 cvweb || true
+            exit 1
