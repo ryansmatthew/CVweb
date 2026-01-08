@@ -6,7 +6,6 @@ DATA = {
     "name": "Nguyen Duy Tuan Anh",
     "title": "Information Technology (IT) — IT Support / Infrastructure",
     "contact": {
-        "address": "Le Duc Tho, My Dinh 2, Nam Tu Liem, Ha Noi",
         "phone": "(84) 377-182-906",
         "email": "politysimple@gmail.com",
     },
