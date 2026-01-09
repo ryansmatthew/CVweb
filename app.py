@@ -14,6 +14,16 @@ DATA = {
         "system operations. With broad expertise in hardware, software, and strong communication "
         "skills, I deliver efficient solutions for users."
     ),
+    "DevOps & Cloud Skills": (
+        "Linux system administration (process, memory, service, networking) "
+        "Git & GitHub (version control, conflict resolution) "
+        "CI/CD: GitHub Actions (build & deployment automation) "
+        "Docker: containerization, Dockerfile, image build & run "
+        "Cloud: AWS EC2 (deployment, SSH, security group) / Google Cloud Platform: basic VM and service operations / Microsoft Azure: basic virtual machine and infrastructure support"
+        "Security: SSH key-based authentication "
+        "Application Deployment: Flask app on EC2 with CI/CD " 
+        "Python scripting: integration, testing, debugging, and production deployment "
+    ),
     "experience": [
         {
             "role": "IT Support and Infrastructure Specialist",
@@ -57,6 +67,7 @@ DATA = {
         {"name": "Trung Cap Bach Khoa", "detail": "Trung Cap CNTT", "date": "2021 - 2023"},
         {"name": "CCNA", "detail": "ID NO. CSCO14423725", "date": "July 26, 2023"},
         {"name": "FCAC", "detail": "2254673881NT", "date": "October 4, 2023"},
+        {"name": "SA & IT Infa Services", "detail": "https://www.coursera.org/verify/PSSB808OGQ08"},
     ],
     "skills": [
         "Network Troubleshooting and Support",
