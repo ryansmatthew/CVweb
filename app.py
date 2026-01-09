@@ -14,7 +14,7 @@ DATA = {
         "system operations. With broad expertise in hardware, software, and strong communication "
         "skills, I deliver efficient solutions for users."
     ),
-    "DevOps & Cloud Skills": (
+    "devopsskills": (
         "Linux system administration (process, memory, service, networking) "
         "Git & GitHub (version control, conflict resolution) "
         "CI/CD: GitHub Actions (build & deployment automation) "
