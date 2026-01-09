@@ -15,7 +15,7 @@ DATA = {
         "skills, I deliver efficient solutions for users."
     ),
     "devopsskills": [
-        "Linux system administration (process, memory, services, networking)",
+        "Linux system basic administration",
         "Git & GitHub (version control, collaboration, conflict resolution)",
         "CI/CD: GitHub Actions (build & deployment automation)",
         "Docker (containerization, Dockerfile, image build & run)",
