@@ -14,16 +14,18 @@ DATA = {
         "system operations. With broad expertise in hardware, software, and strong communication "
         "skills, I deliver efficient solutions for users."
     ),
-    "devopsskills": (
-        "Linux system administration (process, memory, service, networking) "
-        "Git & GitHub (version control, conflict resolution) "
-        "CI/CD: GitHub Actions (build & deployment automation) "
-        "Docker: containerization, Dockerfile, image build & run "
-        "Cloud: AWS EC2 (deployment, SSH, security group) / Google Cloud Platform: basic VM and service operations / Microsoft Azure: basic virtual machine and infrastructure support"
-        "Security: SSH key-based authentication "
-        "Application Deployment: Flask app on EC2 with CI/CD " 
-        "Python scripting: integration, testing, debugging, and production deployment "
-    ),
+    "devopsskills": [
+        "Linux system administration (process, memory, services, networking)",
+        "Git & GitHub (version control, collaboration, conflict resolution)",
+        "CI/CD: GitHub Actions (build & deployment automation)",
+        "Docker (containerization, Dockerfile, image build & run)",
+        "Cloud: AWS EC2 (deployment, SSH, security group)",
+        "Cloud: Google Cloud Platform (basic VM & service operations)",
+        "Cloud: Microsoft Azure (basic virtual machines & infrastructure support)",
+        "Security: SSH key-based authentication",
+        "Application Deployment: Flask app on EC2 with CI/CD",
+        "Python scripting (integration, testing, debugging, production deployment)",
+    ],
     "experience": [
         {
             "role": "IT Support and Infrastructure Specialist",
