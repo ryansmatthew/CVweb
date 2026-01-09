@@ -63,8 +63,13 @@
     <!-- Devops-Skills -->
     <section id="devopsskills">
       <h2>DevOps & Cloud Skills</h2>
-      <p>{{ data.devopsskills }}</p>
+      <ul class="skill-list">
+        {% for skill in data.devopsskills %}
+          <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
     </section>
+
 
     <!-- Experience -->
     <section id="experience">
